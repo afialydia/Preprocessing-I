@@ -1,1 +1,289 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/**variables**/
+/*mixins*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: 'DM Serif Text', serif;
+}
+h1 {
+  font-size: 2.67rem;
+  padding: 0;
+  color: white;
+}
+h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+h3 {
+  font-size: 0.9rem;
+}
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  background: #e4d2b1;
+  width: 85%;
+  height: 70%;
+  align-items: center;
+  margin-top: 3%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'DM Serif Text', serif;
+  width: 100%;
+  padding-top: 3%;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a:hover {
+  text-decoration: overline;
+  color: lightsteelblue;
+}
+.intro {
+  display: flex;
+  background: #e4d2b1;
+  width: 85%;
+  height: 70%;
+  align-items: center;
+  flex-direction: column;
+}
+.intro .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+  padding: 3% 0;
+}
+.intro .title h1,
+.intro .title h3 {
+  font-family: 'DM Serif Text', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .title img {
+  width: 30%;
+  padding-bottom: 3%;
+}
+.intro .team-up {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40%;
+  border-top: 2px dotted lightsteelblue;
+  margin-bottom: 3%;
+}
+.intro .team-up button {
+  width: auto;
+  height: auto;
+  background: lightsteelblue;
+  background-blend-mode: hue;
+  font-family: 'Karla', sans-serif;
+  margin: 1%;
+}
+.MID {
+  display: flex;
+  background: #e4d2b1;
+  width: 85%;
+  height: 70%;
+  align-items: center;
+  align-items: baseline;
+}
+.MID .bio {
+  margin: 30px;
+  width: 38%;
+  text-align: justify;
+  margin: 0 6% 5% 12%;
+}
+.MID .list-it-out {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.MID .list-it-out ul {
+  width: auto;
+  border: 3px dotted lightsteelblue;
+}
+.MID .list-it-out ul li {
+  display: flex;
+  border: 3px dotted lightsteelblue;
+  margin: 1%;
+  font-family: 'Karla', sans-serif;
+  align-items: center;
+}
+.work-hist {
+  display: flex;
+  background: #e4d2b1;
+  width: 85%;
+  height: 70%;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+.work-hist h2 {
+  padding-bottom: 1%;
+}
+.work-hist table {
+  width: 80%;
+  text-align: center;
+}
+.work-hist table td {
+  font-family: 'Karla', sans-serif;
+  padding: 0.5%;
+}
+.work-hist table th {
+  font-family: 'DM Serif Text', serif;
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+}
+footer {
+  font-family: 'Karla', sans-serif;
+}
