@@ -242,6 +242,57 @@ p {
     justify-content: center;
   }
 }
+.contact-me {
+  display: flex;
+  background: #e4d2b1;
+  width: 85%;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.contact-me .team-up {
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me .team-up h2 {
+  color: lightsteelblue;
+  font-size: 2rem;
+  font-display: bold;
+}
+.contact-me .team-up p {
+  width: 60%;
+  padding: 2%;
+  text-align: justify;
+}
+.contact-me .team-up form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.contact-me .team-up form .tiny-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100% !important;
+}
+.contact-me .team-up form .tiny-wrap input,
+.contact-me .team-up form .tiny-wrap textarea {
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+.contact-me .team-up form .tiny-wrap .button {
+  width: 100%;
+  height: auto;
+  background: lightsteelblue;
+  background-blend-mode: hue;
+  font-family: 'DM Serif Text', serif;
+}
 header {
   display: flex;
   background: #e4d2b1;
