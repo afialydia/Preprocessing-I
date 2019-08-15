@@ -148,6 +148,7 @@ table {
 /*mixins*/
 .center() {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -203,6 +204,103 @@ p {
 	align-items: center;
 }
 
+@media screen and (max-width:500px) {
+	nav {
+		.center();
+		width: 100%;
+		font-size: 1.5rem;
+	}
+
+
+	.intro {
+		.center();
+		flex-direction: column;
+
+
+		.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			height: 100%;
+			padding: 3% 0;
+
+
+			h1 {
+				font-size: 4rem;
+				color: @main-color;
+			}
+
+			h3 {
+				font-size: 1rem;
+			}
+
+			h1,
+			h3 {
+				font-family: @heading-font;
+				display: flex;
+				justify-content: center;
+				align-items: baseline;
+			}
+
+			img {
+				display: none;
+			}
+
+
+		}
+	}
+
+	.MID {
+		.center();
+		justify-content: baseline;
+		width: 80%;
+
+		.bio {
+			display: flex;
+			flex-direction: column;
+			width: 80% !important;
+			align-content: center;
+		}
+
+		.list-it-out {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: baseline;
+			justify-content: center;
+	
+			ul {
+				width: 100%;
+				border: 0px dotted @main-color;
+				display:flex;
+				flex-direction: column;
+				align-items: baseline;
+				justify-content: center;
+	
+				li {
+					display: flex;
+					width:100%;
+					border: 3px dotted @main-color;
+					margin: 1%;
+					font-family: @para-font;
+					align-items: baseline;
+					justify-content: center;
+	
+				}
+			}
+	
+		}
+		}
+
+	}
+
+
+
+
+
+
 header {
 	.border();
 
@@ -212,12 +310,12 @@ header {
 		display: flex;
 		justify-content: space-evenly;
 		font-family: @heading-font;
-		width:100%;
-		padding-top:3%;
+		width: 100%;
+		padding-top: 3%;
 
 		a {
 			text-decoration: none;
-			color:white;
+			color: white;
 
 		}
 
@@ -291,9 +389,10 @@ header {
 	}
 
 	.list-it-out {
-		display:flex;
-		flex-direction:column;
-		width:33%;
+		display: flex;
+		flex-direction: column;
+		width: 33%;
+
 		ul {
 			width: auto;
 			border: 3px dotted @main-color;
